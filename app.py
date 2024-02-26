@@ -18,6 +18,8 @@ from langchain.llms import OpenAI
 st.set_page_config(page_title="Question your PDF")
 key = st.sidebar.text_input('OpenAI API Key', type='password')
 
+os.environ["OPENAI_API_KEY"] = key
+
 #value = st.text_input("Some input")
 
 if key:
@@ -30,7 +32,7 @@ def main():
    #key = st.text_input("Please insert your OPENAI KEY")
     
     
-    load_dotenv(key)
+    #load_dotenv(key)
     
    
     st.header("Chat with your PDF")
