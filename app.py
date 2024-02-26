@@ -15,13 +15,13 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.llms import OpenAI
 #from langchain.callbacks import get_openai_callback
 
-
+st.set_page_config(page_title="Question your PDF")
+key = st.sidebar.text_input('OpenAI API Key', type='password')
 
 def main():
     #st.set_page_config()
     
-    st.set_page_config(page_title="Question your PDF")
-    key = st.sidebar.text_input('OpenAI API Key', type='password')
+    
    #key = st.text_input("Please insert your OPENAI KEY")
     
     
