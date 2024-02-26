@@ -18,6 +18,11 @@ from langchain.llms import OpenAI
 st.set_page_config(page_title="Question your PDF")
 key = st.sidebar.text_input('OpenAI API Key', type='password')
 
+#value = st.text_input("Some input")
+
+if key:
+    st.write("There is some value. Processing...")
+
 def main():
     #st.set_page_config()
     
