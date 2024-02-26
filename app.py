@@ -19,10 +19,13 @@ from langchain.llms import OpenAI
 
 def main():
     #st.set_page_config()
+    
     st.set_page_config(page_title="Question your PDF")
+    key = st.sidebar.text_input('OpenAI API Key', type='password')
    #key = st.text_input("Please insert your OPENAI KEY")
     
-    #load_dotenv(key)
+    
+    load_dotenv(key)
     
    
     st.header("Chat with your PDF")
