@@ -16,7 +16,7 @@ from langchain.llms import OpenAI
 #from langchain.callbacks import get_openai_callback
 
 st.set_page_config(page_title="Question your PDF")
-st.header("Please insert your OPENAI secret key first on the left")
+st.header("First insert your OPENAI secret key on the left")
 key = st.sidebar.text_input('OpenAI API Key', type='password')
 
 os.environ["OPENAI_API_KEY"] = key
