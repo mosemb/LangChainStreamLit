@@ -23,7 +23,7 @@ os.environ["OPENAI_API_KEY"] = key
 #value = st.text_input("Some input")
 
 if key:
-    st.write("There is some value. Processing...")
+    st.write("OpenAI Key has been read ...")
 
 def main():
     #st.set_page_config()
